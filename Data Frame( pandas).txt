@@ -420,7 +420,7 @@ df = pd.DataFrame(exam_data , index=labels)
 print("Orginal rows:")
 print(df)
 df.sort_values(by=['name', 'score'], ascending=[False, True])
-print("Sort the data frame first by ‘name’ in descending order, then by ‘score’ in ascending order:")
+print("Sort the data frame first by Â‘nameÂ’ in descending order, then by Â‘scoreÂ’ in ascending order:")
 print(df)
 Copy
 Sample Output:
@@ -437,8 +437,8 @@ g         1    Matthew     yes   14.5
 h         1      Laura      no    NaN                                  
 i         2      Kevin      no    8.0                                  
 j         1      Jonas     yes   19.0                                  
-Sort the data frame first by ‘name’ in descending order, then by ‘score
-’ in ascending order:                                                  
+Sort the data frame first by Â‘nameÂ’ in descending order, then by Â‘score
+Â’ in ascending order:                                                  
    attempts       name qualify  score                                  
 a         1  Anastasia     yes   12.5                                  
 b         3       Dima      no    9.0                                  
@@ -465,7 +465,7 @@ labels = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
 df = pd.DataFrame(exam_data , index=labels)
 print("Orginal rows:")
 print(df)
-print("\nReplace the ‘qualify' column contains the values 'yes' and 'no'  with True and  False:")
+print("\nReplace the Â‘qualify' column contains the values 'yes' and 'no'  with True and  False:")
 df['qualify'] = df['qualify'].map({'yes': True, 'no': False})
 print(df)
 Copy
@@ -514,7 +514,7 @@ labels = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
 df = pd.DataFrame(exam_data , index=labels)
 print("Orginal rows:")
 print(df)
-print("\nChange the name 'James' to ‘Suresh’:")
+print("\nChange the name 'James' to Â‘SureshÂ’:")
 df['name'] = df['name'].replace('James', 'Suresh')
 print(df)
 
@@ -534,7 +534,7 @@ h         1      Laura      no    NaN
 i         2      Kevin      no    8.0                                  
 j         1      Jonas     yes   19.0                                  
                                                                        
-Change the name 'James' to \‘Suresh\’:                                 
+Change the name 'James' to \Â‘Suresh\Â’:                                 
    attempts       name qualify  score                                  
 a         1  Anastasia     yes   12.5                                  
 b         3       Dima      no    9.0                                  
